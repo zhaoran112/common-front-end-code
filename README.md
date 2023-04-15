@@ -59,3 +59,9 @@ function arraySpanMethod({ row, column, rowIndex, columnIndex }) {
     }
 }
 ```
+
+# 前端文件下载
+1.文件流下载
+2.文件地址下载
+3.base64流下载
+4.图片Url下载
