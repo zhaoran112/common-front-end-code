@@ -65,3 +65,17 @@ function arraySpanMethod({ row, column, rowIndex, columnIndex }) {
 2.文件地址下载
 3.base64流下载
 4.图片Url下载
+
+# commonSelect下拉框组件，基于vue2+element-ui封装的下拉框组件 
+```
+const options = [
+  {
+    value:1,
+    label:'正常'
+  }
+];
+  <common-select
+    v-model="status"
+    :options="options">
+    </common-select>
+```
