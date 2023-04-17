@@ -66,7 +66,7 @@ function arraySpanMethod({ row, column, rowIndex, columnIndex }) {
 3.base64流下载
 4.图片Url下载
 
-# commonSelect下拉框组件，基于vue2+element-ui封装的下拉框组件 
+# commonSelect下拉框组件，基于vue2+element-ui封装的下拉框组件
 ```
 const options = [
   {
@@ -79,3 +79,11 @@ const options = [
     :options="options">
     </common-select>
 ```
+
+# commonTable 基于vue2+element-ui封装的el-table
+
+# NewTemplateDialog  基于vue2+element-ui封装的el-dialog
+
+# uploadImage 基于vue2+element-ui封装的图片上传组件
+
+# directive/index.js  自定义指令
