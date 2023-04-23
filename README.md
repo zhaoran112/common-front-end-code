@@ -89,3 +89,61 @@ const options = [
 # directive/index.js  自定义指令
 
 # copyToClipboard.js 复制文本到剪贴板
+
+# filterPane  搜索条件组件封装
+用法
+```js
+filterData: [
+        {
+          name: "采购内容",
+          key: "summary",
+          tag: "input",
+          inputProps: {
+            style: "width:130px",
+          },
+        },
+        {
+          name: "上游版权",
+          key: "seller_company",
+          tag: "input",
+          inputProps: {
+            style: "width:130px",
+          },
+        },
+        {
+          name: "意向编号",
+          key: "id",
+          tag: "input",
+          inputProps: {
+            style: "width:130px",
+          },
+        },
+        {
+          name: "拟签约方",
+          key: "sub_company",
+          tag: "select",
+          selectProps: {
+            options: [],
+            style: "width:130px",
+          },
+        },
+        {
+          name: "签约进度",
+          key: "progress",
+          tag: "select",
+          selectProps: {
+            options: [],
+            style: "width:130px",
+          },
+        },
+        {
+          name: "采购模式",
+          key: "plan_type",
+          tag: "select",
+          selectProps: {
+            options: [],
+            style: "width:130px",
+          },
+        },
+      ],
+```
