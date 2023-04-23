@@ -87,3 +87,5 @@ const options = [
 # uploadImage 基于vue2+element-ui封装的图片上传组件
 
 # directive/index.js  自定义指令
+
+# copyToClipboard.js 复制文本到剪贴板
