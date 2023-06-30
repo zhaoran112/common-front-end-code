@@ -157,3 +157,16 @@ handleResolveContent(`序号	产品ID(必填)	节目名称	剧集类型	集数	�
 	1121	XXXXXXX	院线新片(电影)	10	40	2017-06-05	2023-01-29	1000	10000	/集	非独家	不含转授	全球	正常	限B站
 	1122	ZZZ	非院线电影	10	40	2017-06-05	2023-01-29	0	0	/集	其他	其他描    述信息	中国大陆	正常	`)
 ```
+
+# dynamicLoadScript.js  用法
+
+```js
+import load from './dynamicLoadScript'
+const tinymceCDN = 'https://cdn.jsdelivr.net/npm/tinymce-all-in-one@4.9.3/tinymce.min.js'
+  load(tinymceCDN, (err) => {
+        if (err) {
+          this.$message.error(err.message)
+          return
+        }
+      })
+```
