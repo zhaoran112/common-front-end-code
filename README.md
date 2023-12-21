@@ -170,3 +170,18 @@ const tinymceCDN = 'https://cdn.jsdelivr.net/npm/tinymce-all-in-one@4.9.3/tinymc
         }
       })
 ```
+
+# 用于显示一个目录选择器，以允许用户选择一个目录。
+```js
+document.getElementById('openFilePicker').addEventListener('click', async () => {
+    const directoryHandle = await window.showDirectoryPicker();
+    for await (const entry of directoryHandle.values()) {
+      if (entry.kind === 'file') {
+        const file = await entry.getFile();
+        console.log('[ file ] >', file)
+        // const contents = await file.text();
+        // console.log(`File: ${entry.name}, Contents: ${contents}`);
+      }
+    }
+  });
+```
