@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="source"
+      contenteditable="true"
+    >
+      从这个盒子复制文字
+    </div>
+    <div
+      class="target"
+      contenteditable="true"
+    >
+      在这里粘贴
+    </div>
+
+    <script>
+      const target = document.querySelector("div.target");
+
+      target.addEventListener("paste", (event) => {
+        event.preventDefault();
+        let paste = (event.clipboardData || window.clipboardData).getData(
+          "text"
+        );
+        paste = paste.toUpperCase();
+        const selection = window.getSelection();
+        console.log(selection.rangeCount, "selection.rangeCount");
+        if (!selection.rangeCount) return;
+        selection.deleteFromDocument();
+        selection.getRangeAt(0).insertNode(document.createTextNode(paste));
+        selection.collapseToEnd();
+      });
+    </script>
+
+    <script></script>
+  </body>
+</html>
