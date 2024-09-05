@@ -195,23 +195,24 @@ document
 ```
 
 # 复制对象属性
+
 ```js
 // 定义源对象和目标对象
 const source = {
-  name: 'Alice',
-  age: '25',
-  heightInCm: '170'
+  name: "Alice",
+  age: "25",
+  heightInCm: "170"
 };
 
 const target = {
-  name: '',
+  name: "",
   age: 0,
   height: 0
 };
 
 // 定义键映射和类型转换器
 const keyMap = {
-  height: 'heightInCm'
+  height: "heightInCm"
 };
 
 const typeConverters = {
@@ -224,5 +225,20 @@ const result = copyProp(target, source, keyMap, typeConverters);
 
 console.log(result);
 // 输出: { name: 'Alice', age: 25, height: 170 }
+```
 
+# 观察者模式
+
+1.观察者模式有观察者（Observer）和被观察者（Subject）两种角色。 2.观察者直接订阅别观察者，当被观察者发生变化后，直接通知所有观察者。 3.被观察者主动通知观察者，观察者被动接受通知。
+
+```js
+// Observer.js
+```
+
+# 发布订阅模式
+
+1. 发布订阅模式有发布者、订阅者和代理三种角色。 2.发布者和订阅者通过代理进行通信，彼此不认识。 3.发布者将消息发布给代理，代理再把消息发送给订阅者。
+
+```js
+// puhlishSubscribe.js
 ```
